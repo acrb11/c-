@@ -1,0 +1,28 @@
+/*Nombre del alumno*/
+/*Ejercicio 2*/
+#include <stdio.h>
+main()
+{
+float p1,p2,d,t;//declaración de variables reales//
+char nom[30];//declaración de variables tipo cadena//
+/*Entrada de datos*/
+//printf("Escribe el nombre del producto y sus precios");
+//scanf ("%[^\n] %f %f",nom, &p1, &p2);
+printf ("Nombre del producto --> ");
+scanf ("%[^\n]", nom);
+printf ("Precio inicial --> ");
+scanf ("%f", &p1);
+printf ("Precio final --> ");
+scanf ("%f", &p2);
+//calcular//
+d=p2-p1;
+t=d*100/p1;
+//Salida de información//
+//printf ("Producto: %s \n\tPrecios: %.2f %.2f% \n\tDiferencia %.2f% \n\tTasa de inflacion: %.2f%", nom, p1, p2, d, t);//
+//printf ("Producto: %s \n\tPrecios: %.2f %.2f% \n\tDiferencia %.2f% \n\tTasa de inflacion: %.2f%", nom, p1, p2, d, t);//
+printf ("\n\n\nProducto: %s ",nom);
+printf ("\n\tPrecios: %.2f\t%.2f",p1, p2);
+printf ("\n\tDiferencia: %.2f",d);
+printf ("\n\tTasa de inflación: %.2f",t);
+}
+
